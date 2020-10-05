@@ -451,4 +451,24 @@ main {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.hero__heading--large {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.hero__heading--small {
+  font-size: 64px;
+  line-height: 56px;
+}
+
+.section__heading {
+  font-size: 48px;
+  line-height: 48;
+}
+
+.inner__heading {
+  font-size: 18px;
+  line-height: 28;
+}
 /*# sourceMappingURL=main.css.map */
