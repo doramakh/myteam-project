@@ -500,6 +500,7 @@ main {
   line-height: 28px;
   text-decoration: none;
   text-transform: lowercase;
+  text-align: center;
 }
 
 .button:focus {
