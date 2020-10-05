@@ -553,6 +553,7 @@ main {
 }
 
 .site-header {
+  position: relative;
   padding-top: 73px;
   padding-bottom: 129px;
   background-color: #014E56;
@@ -586,9 +587,69 @@ main {
   width: calc(100% - 260px);
 }
 
+.site-header__toggler {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .site-header__logo {
     margin-right: 48px;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .site-header {
+    padding-top: 48px;
+    padding-bottom: 80px;
+  }
+  .site-header__nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 255px;
+    min-height: 100vh;
+    padding-top: 112px;
+    padding-left: 48px;
+    background-color: #2C6269;
+    background-image: url("../img/bg-pattern-about-1-mobile-nav-1.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right -100px;
+    background-size: contain;
+  }
+  .site-header--open .site-header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .site-header__toggler {
+    z-index: 50;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  .site-header__toggler:focus {
+    outline: none;
+  }
+  .site-header--open .site-header__toggler {
+    background-image: url("../img/icon-close.svg");
   }
 }
 
@@ -630,5 +691,18 @@ main {
 
 .sitenav__button {
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 605px) {
+  .site-header--open .sitenav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 16px;
+  }
+  .site-header--open .sitenav__button {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

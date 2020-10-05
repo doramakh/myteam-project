@@ -32,3 +32,14 @@
 .sitenav__button{
   margin-left: 20px;
 }
+
+@include breakpoint-down(605px){
+  .site-header--open .sitenav__list{
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .site-header--open .sitenav__button{
+    margin-left: 0;
+  }
+}
