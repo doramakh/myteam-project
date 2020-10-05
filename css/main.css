@@ -565,6 +565,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .site-header__logo {
@@ -584,6 +586,12 @@ main {
   width: calc(100% - 260px);
 }
 
+@media only screen and (max-width: 768px) {
+  .site-header__logo {
+    margin-right: 48px;
+  }
+}
+
 .sitenav__list {
   padding: 0;
   margin: 0;
@@ -593,6 +601,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sitenav__item {
@@ -616,5 +626,9 @@ main {
 
 .sitenav__link--active {
   color: #F67E7E;
+}
+
+.sitenav__button {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=main.css.map */

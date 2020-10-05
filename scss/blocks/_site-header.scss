@@ -7,6 +7,7 @@
 .site-header__container{
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .site-header__logo{
@@ -18,4 +19,10 @@
   align-items: center;
   justify-content: space-between;
   width: calc(100% - 260px);
+}
+
+@include breakpoint-down (768px){
+  .site-header__logo{
+    margin-right: 48px;
+  }
 }
