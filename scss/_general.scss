@@ -16,13 +16,13 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Livvic", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
   font-style: normal;
-  font-weight: normal;
-  color: #000000;
-  background-color: #FFFFFF;
+  font-weight: 600;
+  color: $white;
+  background-color: $midnight-green;
 }
 
 img{
