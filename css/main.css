@@ -483,4 +483,63 @@ main {
   font-size: 15px;
   line-height: 25;
 }
+
+.button {
+  display: inline-block;
+  min-width: 153px;
+  max-width: 100%;
+  padding: 10px 16px;
+  border-radius: 24px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.button:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px rgba(121, 200, 199, 0.5);
+          box-shadow: 0 0 0 4px rgba(121, 200, 199, 0.5);
+}
+
+.button--disabled {
+  opacity: 0.25;
+}
+
+.button--light {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.button--light:hover {
+  background-color: #FFFFFF;
+  color: #002529;
+}
+
+.button--dark {
+  border: 2px solid #012F34;
+  color: #012F34;
+}
+
+.button--dark:hover {
+  background-color: #012F34;
+  color: #FFFFFF;
+}
+
+.button--secondary {
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  color: #002529;
+}
+
+.button--secondary:hover {
+  background-color: #79C8C7;
+  border: 2px solid #79C8C7;
+}
 /*# sourceMappingURL=main.css.map */
