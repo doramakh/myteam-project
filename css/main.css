@@ -451,4 +451,16 @@ main {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.text--large {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28;
+}
+
+.text--small {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25;
+}
 /*# sourceMappingURL=main.css.map */
