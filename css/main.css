@@ -452,7 +452,6 @@ main {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
 .hero__heading--large {
   font-size: 100px;
   line-height: 100px;
@@ -472,7 +471,7 @@ main {
   font-size: 18px;
   line-height: 28;
 }
-=======
+
 .text--large {
   font-weight: 600;
   font-size: 18px;
@@ -484,5 +483,4 @@ main {
   font-size: 15px;
   line-height: 25;
 }
->>>>>>> feature-text
 /*# sourceMappingURL=main.css.map */
