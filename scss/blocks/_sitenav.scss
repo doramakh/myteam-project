@@ -1,0 +1,29 @@
+.sitenav__list{
+  @include reset-list;
+  margin-right: -20px;
+  margin-left: -20px;
+  display: flex;
+}
+
+.sitenav__item{
+  margin: 10px 20px;
+}
+
+.sitenav__link{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:active{
+    color: $light-coral;
+  }
+}
+
+.sitenav__link--active{
+  color: $light-coral;
+}

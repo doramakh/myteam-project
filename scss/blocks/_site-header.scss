@@ -3,3 +3,19 @@
   padding-bottom: 129px;
   background-color: $midnight-green;
 }
+
+.site-header__container{
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo{
+  margin-right: 80px;
+}
+
+.site-header__nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 260px);
+}
