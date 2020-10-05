@@ -543,4 +543,10 @@ main {
   background-color: #79C8C7;
   border: 2px solid #79C8C7;
 }
+
+.site-header {
+  padding-top: 73px;
+  padding-bottom: 129px;
+  background-color: #014E56;
+}
 /*# sourceMappingURL=main.css.map */
