@@ -1,0 +1,41 @@
+.promo-section{
+  padding-bottom: 250px;
+  background-color: $midnight-green;
+}
+
+.promo-section__container{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.promo-section__heading{
+  max-width: 635px;
+  margin: 0;
+  margin-right: 30px;
+  font-size: 100px;
+  line-height: 100px;
+  color: $white;
+}
+
+.promo-section__text{
+  position: relative;
+  align-self: flex-end;
+  max-width: 445px;
+  padding-top: 83px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+.promo-section__text::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: $rapture-blue;
+  content: "";
+}

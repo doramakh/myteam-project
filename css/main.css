@@ -415,8 +415,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Livvic", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   font-style: normal;
   font-weight: 600;
   color: #FFFFFF;
@@ -768,5 +768,53 @@ main {
   .site-header--open .sitenav__button {
     margin-left: 0;
   }
+}
+
+.promo-section {
+  padding-bottom: 250px;
+  background-color: #014E56;
+}
+
+.promo-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.promo-section__heading {
+  max-width: 635px;
+  margin: 0;
+  margin-right: 30px;
+  font-size: 100px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.promo-section__text {
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  max-width: 445px;
+  padding-top: 83px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.promo-section__text::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+  content: "";
 }
 /*# sourceMappingURL=main.css.map */
