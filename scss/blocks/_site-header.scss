@@ -24,9 +24,95 @@
 
 .site-header__toggler{
   display: none;
+  position: relative;
+  z-index: 50;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  
+  &:focus{
+    outline: none;
+  }
+}
+
+.site-header--open .site-header__nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  width: 255px;
+  min-height: 100vh;
+  padding-top: 112px;
+  padding-left: 48px;
+  background-color: $police-blue;
+  background-image: url("../img/bg-pattern-about-1-mobile-nav-1.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right -100px;
+  background-size: 200px;
+}
+
+.site-header--open .site-header__nav::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  display: block;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+}
+
+.site-header--open .site-header__toggler {
+  background-image: url("../img/icon-close.svg");
+}
+
+.site-header--nojs .site-header__container{
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header--nojs .site-header__logo{
+  margin-bottom: 28px;
+  margin-right: 0;
+}
+
+.site-header--nojs .site-header__nav{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.site-header--nojs .sitenav__list{
+  width: 100%;
+  justify-content: center;
+}
+
+.site-header--nojs .sitenav__button{
+  margin: 0;
+  margin-top: 20px;
+}
+
+.site-header--nojs .site-header__toggler{
+  display: none;
 }
 
 @include breakpoint-down (768px){
+  .site-header{
+    padding-top: 64px;
+    padding-bottom: 112px;
+  }
+
   .site-header__logo{
     margin-right: 48px;
   }
@@ -40,47 +126,9 @@
 
   .site-header__nav{
     display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: start;
-    justify-content: flex-start;
-    width: 255px;
-    min-height: 100vh;
-    padding-top: 112px;
-    padding-left: 48px;
-    background-color: $police-blue;
-    background-image: url("../img/bg-pattern-about-1-mobile-nav-1.svg");
-    background-repeat: no-repeat;
-    background-position: bottom right -100px;
-    background-size: contain;
   }
-
-  .site-header--open .site-header__nav{
-    display: flex;
-  }
-
+  
   .site-header__toggler{
-    // position: relative;
-    z-index: 50;
-    display: block;
-    width: 25px;
-    height: 25px;
-    margin-left: auto;
-    border: none;
-    background-color: transparent;
-    background-image: url("../img/icon-hamburger.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-
-    &:focus{
-      outline: none;
-    }
-  }
-
-  .site-header--open .site-header__toggler {
-    background-image: url("../img/icon-close.svg");
+    display: block; 
   }
 }
