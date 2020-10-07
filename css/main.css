@@ -796,6 +796,10 @@ main {
   color: #FFFFFF;
 }
 
+.promo-heading__span {
+  color: #F67E7E;
+}
+
 .promo-section__text {
   position: relative;
   -ms-flex-item-align: end;
