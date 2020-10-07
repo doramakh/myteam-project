@@ -554,6 +554,7 @@ main {
 
 .site-header {
   position: relative;
+  z-index: 1;
   padding-top: 73px;
   padding-bottom: 129px;
   background-color: #014E56;
@@ -608,6 +609,7 @@ main {
 
 .site-header--open .site-header__nav {
   position: absolute;
+  z-index: 5;
   top: 0;
   right: 0;
   display: -webkit-box;

@@ -1,5 +1,6 @@
 .site-header{
   position: relative;
+  z-index: 1;
   padding-top: 73px;
   padding-bottom: 129px;
   background-color: $midnight-green;
@@ -43,6 +44,7 @@
 
 .site-header--open .site-header__nav{
   position: absolute;
+  z-index: 5;
   top: 0;
   right: 0;
   display: flex;
