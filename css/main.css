@@ -773,21 +773,27 @@ main {
 .promo-section {
   padding-bottom: 250px;
   background-color: #014E56;
+  background-image: url("../img/bg-pattern-home-1.svg"), url("../img/bg-pattern-home-2.svg");
+  background-repeat: no-repeat;
+  background-size: 200px, auto;
+  background-position: top left -100px, bottom right;
 }
 
 .promo-section__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
 
 .promo-section__heading {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   max-width: 635px;
   margin: 0;
   margin-right: 30px;
@@ -820,5 +826,70 @@ main {
   height: 4px;
   background-color: #79C8C7;
   content: "";
+}
+
+@media only screen and (max-width: 1130px) {
+  .promo-section__heading {
+    max-width: 500px;
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .promo-section__text {
+    max-width: 345px;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .promo-section {
+    background-image: url("../img/bg-pattern-home-2.svg");
+    background-size: auto;
+    background-position: bottom left 50%;
+  }
+  .promo-section__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .promo-section__heading {
+    max-width: 380px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 0;
+    margin-bottom: 24px;
+    font-size: 64px;
+    line-height: 56px;
+  }
+  .promo-section__text {
+    max-width: 457px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 0;
+    padding-bottom: 6px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .promo-section__text::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .promo-section {
+    padding-bottom: 190px;
+  }
+  .promo-section__heading {
+    max-width: 230px;
+    margin-bottom: 18px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .promo-section__text {
+    max-width: 327px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
