@@ -452,24 +452,14 @@ main {
   overflow: hidden;
 }
 
-.hero__heading--large {
-  font-size: 100px;
-  line-height: 100px;
-}
-
-.hero__heading--small {
-  font-size: 64px;
-  line-height: 56px;
-}
-
 .section__heading {
   font-size: 48px;
-  line-height: 48;
+  line-height: 48px;
 }
 
 .inner__heading {
   font-size: 18px;
-  line-height: 28;
+  line-height: 28px;
 }
 
 .text--large {
@@ -893,5 +883,103 @@ main {
   .promo-section__text {
     max-width: 327px;
   }
+}
+
+.feature-section {
+  padding: 140px 0;
+  background-color: #012F34;
+  background-image: url("../img/bg-pattern-home-3.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom right -100px;
+}
+
+.feature-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feature-section__heading {
+  position: relative;
+  max-width: 570px;
+  padding-top: 58px;
+  padding-right: 125px;
+  margin: 0;
+}
+
+.feature-section__heading::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+  content: "";
+}
+
+.feature-section__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 445px;
+  margin-top: -16px;
+  margin-bottom: -16px;
+}
+
+.feature-section__item {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.feature {
+  position: relative;
+}
+
+.feature::before {
+  position: absolute;
+  top: 0;
+  left: -95px;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+.network::before {
+  background-image: url("../img/icon-person.svg");
+}
+
+.process::before {
+  background-image: url("../img/icon-cog.svg");
+}
+
+.platform::before {
+  background-image: url("../img/icon-chart.svg");
+}
+
+.feature__name {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #F67E7E;
+}
+
+.feature__info {
+  margin: 0;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=main.css.map */

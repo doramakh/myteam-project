@@ -1,0 +1,86 @@
+.feature-section{
+  padding: 140px 0;
+  background-color: $sacramento-green;
+  background-image: url("../img/bg-pattern-home-3.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom right -100px;
+}
+
+.feature-section__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-section__heading{
+  position: relative;
+  max-width: 570px;
+  padding-top: 58px;
+  padding-right: 125px;
+  margin: 0;
+}
+
+.feature-section__heading::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: $light-coral;
+  content: "";
+}
+
+.feature-section__list{
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  max-width: 445px;
+  margin-top: -16px;
+  margin-bottom: -16px;
+}
+
+.feature-section__item{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.feature{
+  position: relative;
+}
+
+.feature::before{
+  position: absolute;
+  top: 0;
+  left: -95px;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+.network::before{
+  background-image: url("../img/icon-person.svg");
+}
+
+.process::before{
+  background-image: url("../img/icon-cog.svg");
+}
+
+.platform::before{
+  background-image: url("../img/icon-chart.svg");
+}
+
+.feature__name{
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: $light-coral;
+}
+
+.feature__info{
+  margin: 0;
+  opacity: 0.8;
+}
