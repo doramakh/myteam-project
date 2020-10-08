@@ -1204,4 +1204,33 @@ main {
     margin-bottom: 16px;
   }
 }
+
+.start-section {
+  padding: 76px 0;
+  background-color: #F67E7E;
+  background-image: url("../img/bg-pattern-home-6-about-5.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom left;
+}
+
+.start-section__container {
+  max-width: 764px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.start-section__heading {
+  margin: 0;
+  color: #012F34;
+}
 /*# sourceMappingURL=main.css.map */

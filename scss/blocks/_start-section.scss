@@ -1,0 +1,22 @@
+.start-section{
+  padding: 76px 0;
+  background-color: $light-coral;
+  background-image: url("../img/bg-pattern-home-6-about-5.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom left ;
+}
+
+.start-section__container{
+  max-width: 764px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start-section__heading{
+  margin: 0;
+  color: $sacramento-green;
+}
