@@ -4,7 +4,7 @@
   background-image: url("../img/bg-pattern-home-1.svg"),
   url("../img/bg-pattern-home-2.svg");
   background-repeat: no-repeat;
-  background-size: 200px, auto;
+  background-size: auto, auto;
   background-position: top left -100px, bottom right;
 }
 
@@ -50,7 +50,15 @@
   content: "";
 }
 
-@include breakpoint-down (1130px){
+@include breakpoint-down (1350px){
+  .promo-section{
+    background-image: url("../img/bg-pattern-home-2.svg");
+    background-size: auto;
+    background-position: bottom left 50%;
+  }
+}
+
+@include breakpoint-down (1050px){
   .promo-section__heading{
     max-width: 500px;
     font-size: 80px;
@@ -64,11 +72,6 @@
 }
 
 @include breakpoint-down (850px){
-  .promo-section{
-    background-image: url("../img/bg-pattern-home-2.svg");
-    background-size: auto;
-    background-position: bottom left 50%;
-  }
   .promo-section__container{
     flex-direction: column;
     text-align: center;
