@@ -1161,4 +1161,47 @@ main {
   border-radius: 50%;
   border: 2px solid #C4FFFE;
 }
+
+@media only screen and (max-width: 1150px) {
+  .comment-section {
+    padding: 100px 0;
+  }
+  .comment-section__heading {
+    max-width: 573px;
+    margin-bottom: 84px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .comment-section__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: -42px 0;
+  }
+  .comment-section__item {
+    max-width: 80%;
+    margin: 42px auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .comment-section {
+    padding-top: 140px;
+    padding-bottom: 164px;
+  }
+  .comment-section__heading {
+    max-width: 327px;
+  }
+  .comment-section__item {
+    max-width: 100%;
+  }
+  .comment-text {
+    margin-bottom: 16px;
+  }
+  .comment__author-position {
+    margin-bottom: 16px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
