@@ -1046,4 +1046,119 @@ main {
     margin-bottom: 8px;
   }
 }
+
+.comment-section {
+  padding: 140px 0;
+  background-color: #004047;
+  background-image: url("../img/bg-pattern-home-4-about-3.svg"), url("../img/bg-pattern-home-5.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top left, bottom right;
+}
+
+.comment-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.comment-section__heading {
+  max-width: 932px;
+  margin: 0;
+  margin-bottom: 92px;
+}
+
+.comment-heading__span {
+  color: #79C8C7;
+}
+
+.comment-section__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.comment-section__item {
+  max-width: 350px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.comment {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment::before {
+  position: absolute;
+  z-index: 1;
+  top: -36px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 67px;
+  height: 56px;
+  background-image: url("../img/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+.comment-text {
+  position: relative;
+  z-index: 5;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.comment__author {
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: #79C8C7;
+}
+
+.comment__author-position {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.comment__img {
+  display: block;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 2px solid #C4FFFE;
+}
 /*# sourceMappingURL=main.css.map */
